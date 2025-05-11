@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensitivitas Free Fire - AIMSET.ID</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AIMSET.ID</h1>
+        <button id="theme-toggle">🌓</button>
+    </header>
+    <main>
+        <h2>SENSI BUAT PARA KACUNG EPEP</h2>
+        
+        <section class="auto-recommendation">
+            <h3>Rekomendasi Otomatis</h3>
+            
+            <div class="step">
+                <label for="device">Pilih Perangkat:</label>
+                <select id="device">
+                    <option value="">-- Pilih Perangkat --</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="redmagic">RedMagic</option>
+                    <option value="oppo">OPPO</option>
+                    <option value="iqoo">iQOO</option>
+                    <option value="vivo">Vivo</option>
+                    <option value="infinix">Infinix</option>
+                    <option value="poco">POCO</option>
+                    <option value="redmi">Redmi</option>
+                    <option value="rog">ROG Phone</option>
+                    <option value="pixel">Google Pixel</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="realme">Realme</option>
+                </select>
+            </div>
+
+            <div class="step">
+                <label for="role">Gaya Bermain:</label>
+                <select id="role">
+                    <option value="rusher">Rusher (Agresif Close-range)</option>
+                    <option value="sniper">Sniper (Jarak Jauh)</option>
+                    <option value="support">Support (Tim Player)</option>
+                </select>
+            </div>
+
+            <button id="generate-recommendation">Buat Rekomendasi</button>
+            <div id="recommendation-result" class="result-box"></div>
+        </section>
+        
+        <section class="custom-sensitivity">
+            <h3>Custom Sensitivitas</h3>
+            <p>Geser slider untuk menyesuaikan (0-200):</p>
+            
+            <div class="slider-container">
+                <label for="general">Lihat Sekeliling: <span id="general-value">100</span></label>
+                <input type="range" id="general" min="0" max="200" value="100" class="slider">
+                <div class="feedback" id="general-feedback"></div>
+            </div>
+
+            <div class="slider-container">
+                <label for="reddot">Red Dot: <span id="reddot-value">100</span></label>
+                <input type="range" id="reddot" min="0" max="200" value="100" class="slider">
+                <div class="feedback" id="reddot-feedback"></div>
+            </div>
+
+            <div class="slider-container">
+                <label for="scope2x">Scope 2x: <span id="scope2x-value">100</span></label>
+                <input type="range" id="scope2x" min="0" max="200" value="100" class="slider">
+                <div class="feedback" id="scope2x-feedback"></div>
+            </div>
+
+            <div class="slider-container">
+                <label for="scope4x">Scope 4x: <span id="scope4x-value">100</span></label>
+                <input type="range" id="scope4x" min="0" max="200" value="100" class="slider">
+                <div class="feedback" id="scope4x-feedback"></div>
+            </div>
+
+            <button id="save-btn">Simpan Setting</button>
+            <div id="saved-settings"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
